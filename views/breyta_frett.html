@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bryta frétt</title>
+</head>
+<body>
+	<h2>Breyta frétt</h2>
+	<table>
+		<tr>
+			<th>ID.nr</th>
+			<th>Frétt</th>
+			<th>Höfundur</th>
+			<th>Breyta</th>
+			<th>Eyða</th>
+		</tr>
+
+		% for i in cur:
+		<form method="POST" action="/breyta" accept-charset="IOS-8859-1">
+			<tr>
+				<td><input type="text" name="ID" value="{{i[0]}}"></td>
+				<td><textarea name="story" cols="66">{{!i[1]}}</textarea></td>
+				<td><input type="text" name="author" value="{{i[2]}}"></td>
+				<td><input type="submit" name="breytan" value="Bryta"></td>
+				<td><input type="submit" name="eyda" value="Eyða"></td>
+
+			</tr>
+		</form>
+		% end
+	</table>
+	<hr>
+	<a href="/">Fréttasíðan</a>
+	<hr>
+
+
+</body>
+</html>

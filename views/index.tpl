@@ -51,12 +51,12 @@
 	<hr>
 	<p>Hér er allt or something</p>
 	% import pymysql
-	% conn = pymysql.connect(host='tsuts.tskoli.is', port=3306, user='1106012980', passwd='mypassword', db='1106012980_vef2_lokaverkefni')
+	% conn = pymysql.connect(host='tsuts.tskoli.is', port=3306, user='0412012660', passwd='mypassword', db='0412012660_lokaverk01')
 	% c = conn.cursor()
-	% c.execute("SELECT * FROM 1106012980_vef2_lokaverkefni.blogg")
+	% c.execute("SELECT * FROM 0412012660_lokaverk01.frett")
 	% for i in c:     
-		<div class="row">
-		<div class="leftcolumn">
+		<div>
+		<div>
 			<div class="card">
 			<h2>{{i[2]}}</h2>
 			<h5>{{i[3]}}</h5>

@@ -50,19 +50,5 @@
 	<button class="takinyskra" type="button" class="btn btn-outline-secondary" onclick="window.location.href='inskranig'">inskranig</button>
 	<hr>
 	<p>Hér er allt or something</p>
-	% import pymysql
-	% conn = pymysql.connect(host='tsuts.tskoli.is', port=3306, user='0412012660', passwd='mypassword', db='0412012660_lokaverk01')
-	% c = conn.cursor()
-	% c.execute("SELECT * FROM 0412012660_lokaverk01.frett")
-	% for i in c:     
-		<div>
-		<div>
-			<div class="card">
-			<h2>{{i[2]}}</h2>
-			<h5>{{i[3]}}</h5>
-			<p>u/{{i[1]}}</p>
-			</div>
-		</div>
-		%end
 </body>
 </html>

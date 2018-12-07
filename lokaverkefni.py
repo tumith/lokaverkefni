@@ -71,7 +71,7 @@ def news():
         conn.commit()
         cur.close()
         conn.close()
-        return template('/')
+        return template('/',i=i,s=s,a=a)
     else:
         return template('neitakk')
 
@@ -125,7 +125,7 @@ def static_skrar(skra):
 def member():
     conn = pymysql.connect(host="tsuts.tskoli.is",port=3306,user="0412012660",password="mypassword", db='0412012660_lokaverk01')
     c = conn.cursor()
-    c.execute("SELECT user FROM 0412012660_lokaverk01.users")
+    c.execute("SELECT * FROM 0412012660_lokaverk01.users")
     result = c.fetchall()
     c.close()
     output = template('members',rows = result)

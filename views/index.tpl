@@ -24,10 +24,6 @@
 		    display: inline-block;
 		}
 
-		.inskra{
-
-		}
-
 		button{
 		  background-color: #538cc6;
 		  border: none;

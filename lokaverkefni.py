@@ -71,7 +71,7 @@ def news():
         conn.commit()
         cur.close()
         conn.close()
-        return template('/', rows = result)
+        return template('/')
     else:
         return template('neitakk')
 
